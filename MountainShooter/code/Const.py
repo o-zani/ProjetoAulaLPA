@@ -1,0 +1,2 @@
+W_WIDTH = 576
+W_HEIGHT = 324
