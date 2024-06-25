@@ -11,7 +11,7 @@ class EntityFactory:
         match entity_name:
             case 'Level1Bg':
                 list_bg = []
-                for i in range (3):
+                for i in range (5):
                     list_bg.append(Background(f'Level1Bg{i}', (0,0)))
                     list_bg.append(Background(f'Level1Bg{i}', (W_WIDTH, 0)))
                 return list_bg

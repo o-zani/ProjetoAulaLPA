@@ -17,7 +17,7 @@ class Menu:
 
     def run(self, ):
     # Carregamento e reprodução da Música
-        pygame.mixer_music.load('./asset/Menu.mp3')
+        pygame.mixer_music.load('./asset/MúsicaTemaJogo.mp3')
         pygame.mixer_music.play(-1)
         pygame.mixer_music.set_volume(0.1)
         menu_option = 0
@@ -43,6 +43,7 @@ class Menu:
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     quit()
+
     # ---------------------------------------------
 
     # Mover para as opções de baixo
