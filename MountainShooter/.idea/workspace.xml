@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a95efd7-7eee-4c89-afe3-999291a74bb8" name="Changes" comment="Aula sobre criação e movimento de entidades">
-      <change afterPath="$PROJECT_DIR$/asset/Enemy1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Enemy2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Enemy3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Level1-Welcome To The Jungle.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/MúsicaTemaJogo.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Player2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/player1.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Player1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Background.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Background.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Const.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Const.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Enemy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/EntityFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Level.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Player.py" afterDir="false" />
-    </list>
+    <list default="true" id="8a95efd7-7eee-4c89-afe3-999291a74bb8" name="Changes" comment="Aula sobre criação e movimento de entidades" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="aula_pratica_01" />
+        <entry key="$PROJECT_DIR$/.." value="aula_pratica_02" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -59,7 +42,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "aula__pratica__02",
+    "git-widget-placeholder": "aula__pratica__03",
     "last_opened_file_path": "D:/ESTUDOS/UNINTER/ADS/19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA/========JOGO FEITO=========/LPAProjetoAula/MountainShooter/asset",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
@@ -171,7 +154,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="aula_pratica_03" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
