@@ -73,7 +73,7 @@ class Menu:
         text_font: Font = pygame.font.SysFont(name="Ubuntu Bold", size=text_size)
 
     # Renderiza o texto para obter seu tamanho
-        text_surf: Surface = text_font.render(text, True, text_color)
+        text_surf: Surface = text_font.render(text, True, text_color).convert_alpha()
         text_rect: Rect = text_surf.get_rect(center=text_center_pos)
 
     # Define as dimensões do retângulo de fundo e da borda

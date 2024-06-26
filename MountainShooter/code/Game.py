@@ -13,7 +13,7 @@ class Game:
     def __init__(self):
         pygame.init()
         self.window: Surface = pygame.display.set_mode(size=(W_WIDTH, W_HEIGHT))
-
+    # Configurações do MENU
     def run(self):
         while True:
             menu = Menu(self.window)
