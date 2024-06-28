@@ -7,8 +7,8 @@ import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import BORDER_PADDING, CORNER_RADIUS, BORDER_COLOR, BACKGROUND_COLOR, COLOR_DARKBLUE, MENU_OPTION, \
-    EVENT_ENEMY
+from code.Const import BORDER_PADDING, BORDER_COLOR, BACKGROUND_COLOR, COLOR_DARKBLUE, MENU_OPTION, \
+    EVENT_ENEMY, CORNER_RADIUS_INFO_SCREEN
 from code.Enemy import Enemy
 from code.Entity import Entity
 from code.EntityFactory import EntityFactory
@@ -27,7 +27,8 @@ class Level:
         self.entity_list.append(EntityFactory.get_entity('Player1'))
         if menu_option in [MENU_OPTION[1], MENU_OPTION[2]]:
             self.entity_list.append(EntityFactory.get_entity('Player2'))
-        pygame.time.set_timer(EVENT_ENEMY, 4000)
+        pygame.time.set_timer(EVENT_ENEMY, 4000) # 4 segundos por entidade
+        pygame.time.set_timer(EVENT_TIMEOUT, 20000) # 20 segundos por fase
 
     # ------------------------------------------
     # Reproduzir a música
@@ -49,10 +50,14 @@ class Level:
                     shoot = ent.shoot()
                     if shoot is not None:
                         self.entity_list.append(shoot)
+                if ent.name == 'Player1':
+                    self.level_text(14, f'P1 Vida: {ent.health} | Score: {ent.score}', COLOR_DARKBLUE, (10, 10))
+                if ent.name == 'Player2':
+                    self.level_text(14, f'P2 Vida: {ent.health} w| Score: {ent.score}', COLOR_DARKBLUE, (10, 25))
             # ------------------------------------------
             # MOSTRAR O FPS
-            self.level_text(14, f'FPS: {clock.get_fps():.0f}', COLOR_DARKBLUE, (10, 10))
-            self.level_text(14, f'entidades: {len(self.entity_list)}', COLOR_DARKBLUE, (55, 10))
+            self.level_text(14, f'FPS: {clock.get_fps():.0f}', COLOR_DARKBLUE, (465, 10))
+            self.level_text(14, f'Entidades: {len(self.entity_list)}', COLOR_DARKBLUE, (510, 10))
             # ATUALIZAR TELA
             pygame.display.flip()
             # VERIFICAR RELACIONAMENTOS DE ENTIDADES
@@ -82,9 +87,9 @@ class Level:
         background_rect = text_rect.inflate(BORDER_PADDING * 1, BORDER_PADDING * 1)
 
         # Desenha o retângulo de fundo com cantos arredondados
-        pygame.draw.rect(self.window, BACKGROUND_COLOR, background_rect, border_radius=CORNER_RADIUS)
+        pygame.draw.rect(self.window, BACKGROUND_COLOR, background_rect, border_radius=CORNER_RADIUS_INFO_SCREEN)
         # Desenha a borda do fundo com cantos arredondados
-        pygame.draw.rect(self.window, BORDER_COLOR, background_rect, 1, border_radius=CORNER_RADIUS)
+        pygame.draw.rect(self.window, BORDER_COLOR, background_rect, 1, border_radius=CORNER_RADIUS_INFO_SCREEN)
 
         # Renderiza e desenha o texto principal
         self.window.blit(source=text_surf, dest=text_rect)
