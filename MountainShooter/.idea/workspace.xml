@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a95efd7-7eee-4c89-afe3-999291a74bb8" name="Changes" comment="Aula sobre criação e movimento de entidades">
+    <list default="true" id="8a95efd7-7eee-4c89-afe3-999291a74bb8" name="Changes" comment="Colisão com Entidades">
+      <change afterPath="$PROJECT_DIR$/asset/Level2.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level2Bg0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level2Bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level2Bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level2Bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/Level2Bg4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/ScoreBg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Score.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/Level1-Welcome To The Jungle.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level1.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/MúsicaTemaJogo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/asset/MúsicaTemaJogo.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Const.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Const.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/EntityMediator.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityMediator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/EntityFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityFactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Level.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/PlayerShot.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/PlayerShot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,25 +54,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;aula__pratica__06&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ESTUDOS/UNINTER/ADS/19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA/========JOGO FEITO=========/LPAProjetoAula/MountainShooter/asset&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "aula__pratica__06",
+    "last_opened_file_path": "D:/ESTUDOS/UNINTER/ADS/19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA/========JOGO FEITO=========/LPAProjetoAula/MountainShooter/asset",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ESTUDOS\UNINTER\ADS\19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA\========JOGO FEITO=========\LPAProjetoAula\MountainShooter\asset" />
+      <recent name="D:\ESTUDOS\UNINTER\ADS\19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA\========JOGO FEITO=========\LPAProjetoAula\MountainShooter\asset\Level2Bg" />
       <recent name="D:\ESTUDOS\UNINTER\ADS\19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA\========JOGO FEITO=========\LPAProjetoAula\MountainShooter\code" />
       <recent name="D:\ESTUDOS\UNINTER\ADS\19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA\========JOGO FEITO=========\LPAProjetoAula\MountainShooter\.venv\assets lvl2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ESTUDOS\UNINTER\ADS\19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA\========JOGO FEITO=========\LPAProjetoAula\MountainShooter\asset" />
+      <recent name="D:\ESTUDOS\UNINTER\ADS\19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA\========JOGO FEITO=========\LPAProjetoAula\MountainShooter\asset\Level1Bg" />
+      <recent name="D:\ESTUDOS\UNINTER\ADS\19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA\========JOGO FEITO=========\LPAProjetoAula\MountainShooter\asset\Enemy1" />
       <recent name="D:\ESTUDOS\UNINTER\ADS\19.02.24 - LINGUAGEM DE PROGRAMAÇÃO APLICADA\========JOGO FEITO=========\LPAProjetoAula\MountainShooter" />
     </key>
   </component>
@@ -179,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719385011448</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Colisão com Entidades">
+      <option name="closed" value="true" />
+      <created>1719609684054</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719609684054</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Colisão com Entidades">
+      <option name="closed" value="true" />
+      <created>1719609699420</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1719609699420</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +238,7 @@
     <MESSAGE value="Main Vazio" />
     <MESSAGE value="Text Menu" />
     <MESSAGE value="Aula sobre criação e movimento de entidades" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula sobre criação e movimento de entidades" />
+    <MESSAGE value="Colisão com Entidades" />
+    <option name="LAST_COMMIT_MESSAGE" value="Colisão com Entidades" />
   </component>
 </project>

@@ -5,7 +5,7 @@ from pygame import Surface, Rect
 from pygame.font import Font
 
 from code.Const import W_WIDTH, COLOR_DARKBLUE, BORDER_COLOR, BACKGROUND_COLOR, \
-    BORDER_PADDING, CORNER_RADIUS, MENU_OPTION, COLOR_BLUE
+    BORDER_PADDING, CORNER_RADIUS, MENU_OPTION, COLOR_BLUE, CORNER_RADIUS_OPTION
 
 
 # Configuração da Janela
@@ -31,9 +31,9 @@ class Menu:
         # Desenha as opções do menu
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(25, MENU_OPTION[i],COLOR_BLUE,((W_WIDTH / 2), 200 + 30 * i))
+                    self.menu_text(25, MENU_OPTION[i],COLOR_BLUE,((W_WIDTH / 2), 200 + 25 * i))
                 else:
-                    self.menu_text(25, MENU_OPTION[i],COLOR_DARKBLUE,((W_WIDTH / 2), 200 + 30 * i))
+                    self.menu_text(25, MENU_OPTION[i],COLOR_DARKBLUE,((W_WIDTH / 2), 200 + 25 * i))
             pygame.display.flip()
 
 
@@ -77,12 +77,12 @@ class Menu:
         text_rect: Rect = text_surf.get_rect(center=text_center_pos)
 
     # Define as dimensões do retângulo de fundo e da borda
-        background_rect = text_rect.inflate(BORDER_PADDING * 2, BORDER_PADDING * 2)
+        background_rect = text_rect.inflate(BORDER_PADDING * 4, BORDER_PADDING * 1)
 
     # Desenha o retângulo de fundo com cantos arredondados
-        pygame.draw.rect(self.window, BACKGROUND_COLOR, background_rect, border_radius=CORNER_RADIUS)
+        pygame.draw.rect(self.window, BACKGROUND_COLOR, background_rect, border_radius=CORNER_RADIUS_OPTION)
     # Desenha a borda do fundo com cantos arredondados
-        pygame.draw.rect(self.window, BORDER_COLOR, background_rect, 1, border_radius=CORNER_RADIUS)
+        pygame.draw.rect(self.window, BORDER_COLOR, background_rect, 1, border_radius=CORNER_RADIUS_OPTION)
 
     # Renderiza e desenha o texto principal
         self.window.blit(source=text_surf, dest=text_rect)
